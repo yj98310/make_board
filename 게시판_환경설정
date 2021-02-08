@@ -1,0 +1,32 @@
+# 환경 설정
+- Java development Kit JDK 설치
+ 1.https://www.oracle.com/kr/java/technologies/javase-downloads.html
+ 2.jdk 다운로드
+
+- Java 경로 설정
+ 1.제어판 -> 시스템 및 보안 -> 시스템 -> 고급 시스템 설정 -> 환경 변수 
+ 2.새로 만들기 클릭 
+   변수 이름 : JAVA_HOME
+   변수 값 : C:\Program Files\Java\jdk-15.0.2    # java 설치 경로 복사, 붙여넣기
+ 3.시스템 변수 중 Path 클릭 
+   변수 값에 입력했던 java 경로를 제일 아래에 추가 
+   
+- Apache Tomcat 설치
+ 1.http://tomcat.apache.org/
+ 2.Download 부분에서 원하는 version의 Tomcat 선택
+ 3.OS에 맞는 파일 다운로드 
+ 4.C 드라이브에 Java 폴더 생성, tomcat 압축 경로로 지정 
+ -> C 드라이브 Java 폴더 안에 apahce-tomcaat-version이 만들어지도록 
+
+- 설치 확인 
+ 1. cmd 창을 열어 javac 입력 -> 관련 파일들이 출력되면 정상 설치
+ 2. cmd 창을 관리자 모드로 열고 tomcat 설치 경로 입력 -> startup.bat 입력 
+ -> 크롬 창에 "localhost:8080"을 입력하고 이동했을 때 Apache Tomcat 화면이 뜨면 정상 설치 
+ ( cmd 창을 끄면 웹 서버에 연결되지 않는다 )
+ 
+ - Eclipse Java EE 설치 
+  1.https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-12/R/eclipse-inst-jre-win64.exe
+  2.다운로드한다
+  3.실행파일을 연다 -> Eclipse IDE for Java EE Developers 클릭 
+  3. New -> Dynamic Web Project 선택 -> Project name : BBS -> Target Runtime : Apache Tomcat v8.5 -> Finish
+  4. Run -> Manually define a new server -> Tomcat v8.5 Server 선택 ( 설치한 tomcat 버전에 따라 다름 ) -> Finish 
