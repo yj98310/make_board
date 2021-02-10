@@ -25,6 +25,9 @@
    select * from user; // user 테이블의 모든 정보 출력
    
    
-# MySQL J 설치
+# MySQL jdbc driver 설치
  1. https://dev.mysql.com/downloads/connector/j/
- 2. Windows 환경이라면 
+ 2. Windows 환경이라면 Platform Independent 선택 -> 두번째 zip 파일 다운로드
+ 3. JSP 폴더에 압축 풀기 -> mysql-connector-java-버전-bin.jar 파일 복사
+ 4. Eclipse의 WebContent -> WEB-INF -> lib 안에 mysql-connector-java-버전-bin.jar 붙여넣기 
+ 5. BBS 프로젝트 폴더 선택, 우클릭 -> Properties -> Java Build Path -> Libraries 선택 -> Add Jars -> 4번에서 붙여넣은 jar 파일 선택 -> OK -> 정상 연결 
