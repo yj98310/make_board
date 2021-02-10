@@ -1,0 +1,30 @@
+# 회원 DB 구축
+- MySQL 커뮤니티 서버 설치
+ 1. https://dev.mysql.com/downloads/installer/
+ 2. 용량이 더 큰 두 번째 installer 설치 
+ 3. Next 쭉 선택 -> Type and Networking : Standalone MySQL Server / Classic ~ 선택, Next -> Password 설정 -> Execute 선택 -> 설치 완료
+ 4. MySQL Command Line Client가 있다면 설치 완료 
+ 
+- DB 관리
+ 1. MySQL Command Line Client 클릭 
+ 2. 비밀번호 입력
+ 3. 데이터베이스 생성 및 테이블 생성
+   CREATE DATABASE BBS;
+   USE BBS;
+   CREATE TABLE USER (
+    userID VARCHAR(20),
+    userPassword VARCHAR(20),
+    userGedner VARCHAR(20),
+    userEmail VARCHAR(50),
+    PRIMARY KEY (userID)
+   );
+   show tables; // talbe이 정상적으로 출력
+   desc user; // table에 만들어져 있는 Field 이름, type, key 등의 속성 출력
+ 4. 테이블에 데이터 입력
+   INSERT INTO USER VALUES('이름','비밀번호','성별','이메일'); // 원하는 값 입력
+   select * from user; // user 테이블의 모든 정보 출력
+   
+   
+# MySQL J 설치
+ 1. https://dev.mysql.com/downloads/connector/j/
+ 2. Windows 환경이라면 
