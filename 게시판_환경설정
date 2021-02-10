@@ -30,3 +30,4 @@
   3.실행파일을 연다 -> Eclipse IDE for Java EE Developers 클릭 
   3. New -> Dynamic Web Project 선택 -> Project name : BBS -> Target Runtime : Apache Tomcat v8.5 -> Finish
   4. Run -> Manually define a new server -> Tomcat v8.5 Server 선택 ( 설치한 tomcat 버전에 따라 다름 ) -> Finish 
+
