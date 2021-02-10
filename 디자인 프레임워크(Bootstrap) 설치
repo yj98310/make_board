@@ -1,0 +1,7 @@
+# Bootstrap 설치
+
+1. http://getbootstrap.com/getting-started/#download
+2. 다운로드 
+3. JSP 폴더 안에 압축 풀기
+4. css / fonts / js 폴더 복사 -> Eclipse의 WebContent 폴더 안에 붙여넣기
+
